@@ -3632,7 +3632,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.controller.ts": {
-        "version": "fb5ca1df3bef6053add3a953947c788289f709333cdb847346535a35b2594b9d",
+        "version": "3f32676e34a184963626849fb5576d77150e401d498562290d518cde1c7d4b9c",
         "signature": "0c69b288d2802da990e208721d9f1d36dbd59dab264653b367fd1c3aca68bd50",
         "affectsGlobalScope": false
       },
