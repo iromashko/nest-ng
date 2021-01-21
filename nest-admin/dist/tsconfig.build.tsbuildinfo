@@ -3667,8 +3667,8 @@
         "affectsGlobalScope": false
       },
       "../src/user/user.controller.ts": {
-        "version": "3eb414939de0f06fb329f2ea367dc196db13ee2f33e87a9ef9ae66e0888a23f2",
-        "signature": "0c8c0841a4ce73ca0e08e35d382f5aabe60013b6e8e69a46cf4591513265b57f",
+        "version": "b177d9ae3f16126639543e2a7d22221797a3e4ce527839b9aefefaeb219f327d",
+        "signature": "16b99f7fd03df51a22578ca6d4c4edf022a05a0333e0a880dbb31e8d87d17aa6",
         "affectsGlobalScope": false
       },
       "../src/user/user.module.ts": {
