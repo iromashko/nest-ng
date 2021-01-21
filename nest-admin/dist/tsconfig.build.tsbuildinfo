@@ -2941,9 +2941,14 @@
         "signature": "d90445b6258429107e0ebd116bc5476ebe155df2206f70aadf058ba28f092db8",
         "affectsGlobalScope": false
       },
+      "../src/role/role.entity.ts": {
+        "version": "6feaa907a8541f3f604e083a632f5c878712a0281ca3374ccad748e8a0c9f985",
+        "signature": "ac267b931455931074ee940600f18c2f4479af7be7591ef398bacc83dba59401",
+        "affectsGlobalScope": false
+      },
       "../src/user/models/user.entity.ts": {
-        "version": "af72b1aaea6adf5e1a4cc9d66823d02f669ca85561183b36d8972960c61138f3",
-        "signature": "8c19da37f3804adc28fca5eb997c163c21e22b3c7e1a81dfd70336726f334a55",
+        "version": "e580b9b1d5793a210ef1fa2f55abc0b58d297dfe4374b3bcd653d9431b541da4",
+        "signature": "0bdb5fe891d7027de4b1ee9ff369ca40280e9ee6ee08b0e8a5cdf2c284808c40",
         "affectsGlobalScope": false
       },
       "../src/user/user.service.ts": {
@@ -3582,8 +3587,8 @@
         "affectsGlobalScope": false
       },
       "../src/user/models/user-create.dto.ts": {
-        "version": "82f07ab4560873edbfa45607263644ca1d54d109a1ebea4b5b680a80e0b50714",
-        "signature": "b1cf7b702395b347563acd3ecaa7e8e4007a40cac11937746a5330f98c5bb0c6",
+        "version": "243a2ce70e207e1c3d6b35b2baf3ff43a85f9ecf49abd04b888604928cf8dc32",
+        "signature": "3162fd529d18edb941d5b7576dfd88bd3e88b74b9e13a4d5a925a0a2a0e91de4",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.guard.ts": {
@@ -3592,12 +3597,12 @@
         "affectsGlobalScope": false
       },
       "../src/user/models/user-update.dto.ts": {
-        "version": "5e75a90acd14ece9a3e8b9a1031821cf04e22664a631fd8452b96a4553981f09",
-        "signature": "5ab4ffaa225002b98058f80546cf45ed00d8f69af99569cfe6132bccafee2c5a",
+        "version": "64f0065d1fcd95a47a61c0f24ad1a32363316a52ea3115cdd3005b67dc978fc9",
+        "signature": "315ee5d6a62a8c606cd95101acf8ecd24a5d1a32a248efb29afdf74f6fbddd7b",
         "affectsGlobalScope": false
       },
       "../src/user/user.controller.ts": {
-        "version": "9ca2b3713a1a5d378ecf0420d1747551935ca319413cebebbf8303f929f58453",
+        "version": "85341adcc053d71d30454b026d3a8b8bb769f34d5ebe142e58bdb2a60c988ff3",
         "signature": "37c66cf3256baf75e1114c55b2763b0396dcc509316f8738a8182017ec3a099c",
         "affectsGlobalScope": false
       },
@@ -3652,7 +3657,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.controller.ts": {
-        "version": "acef4f11b333dbf4e90e3e44700735d20e2e53e06263680dab0a84d63db5e8c3",
+        "version": "b29a98dc60710cc9cae601b8b1895486f1c431d15626f291189f505e36685c88",
         "signature": "fded34ceb6420abf8ecdcde73a444a083422645eb5dc97b2213a426a5e993c19",
         "affectsGlobalScope": false
       },
@@ -3661,8 +3666,23 @@
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
+      "../src/role/role.service.ts": {
+        "version": "759d48cd15d9afcb001609b322e3ba68de5d745afcbc281d7ae204e9de2ac9b5",
+        "signature": "29184727ae1719ad1d3af3e3db45fab764dafb1d451803ce8b1ee01b0d40a6d6",
+        "affectsGlobalScope": false
+      },
+      "../src/role/role.controller.ts": {
+        "version": "e0c20790dbfa455c3f069fde346b4c1ccdad2b9d698ef9c85783c550f039696e",
+        "signature": "b8d9fe52bfd48a74b2a4abbc3737b9673483e19fc5d9caa3534823cc4b8eabe2",
+        "affectsGlobalScope": false
+      },
+      "../src/role/role.module.ts": {
+        "version": "b8faa74d8727f2b7577c9dd138490afd4bce44c366692afd1855b2847a754cf5",
+        "signature": "917746f451b9febce5f684d7e8c86df5f7486ad7e87e4c1aed4a48f4f0c83650",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "6877e0abbdf2fe7b07ba7d50fe3b1edc241e05b3a5cc40e9ac890c78bc729a35",
+        "version": "87340791a2269945f0c525223cb8d183a4adac80f255efde206b0ab077d9b866",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -7191,6 +7211,7 @@
         "../src/app.service.ts",
         "../src/auth/auth.module.ts",
         "../src/common/common.module.ts",
+        "../src/role/role.module.ts",
         "../src/user/user.module.ts"
       ],
       "../src/app.service.ts": [
@@ -7228,12 +7249,34 @@
         "../node_modules/@types/cookie-parser/index.d.ts",
         "../src/app.module.ts"
       ],
+      "../src/role/role.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/role/role.entity.ts",
+        "../src/role/role.service.ts"
+      ],
+      "../src/role/role.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/role/role.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/role/role.controller.ts",
+        "../src/role/role.entity.ts",
+        "../src/role/role.service.ts"
+      ],
+      "../src/role/role.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/role/role.entity.ts"
+      ],
       "../src/user/models/user-create.dto.ts": [
         "../node_modules/class-validator/types/index.d.ts"
       ],
       "../src/user/models/user.entity.ts": [
         "../node_modules/class-transformer/types/index.d.ts",
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/role/role.entity.ts"
       ],
       "../src/user/user.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10297,6 +10340,17 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/jwt/index.d.ts"
       ],
+      "../src/role/role.controller.ts": [
+        "../src/role/role.entity.ts",
+        "../src/role/role.service.ts"
+      ],
+      "../src/role/role.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/role/role.entity.ts"
+      ],
+      "../src/user/models/user.entity.ts": [
+        "../src/role/role.entity.ts"
+      ],
       "../src/user/user.controller.ts": [
         "../src/user/models/user-create.dto.ts",
         "../src/user/models/user-update.dto.ts",
@@ -11131,6 +11185,10 @@
       "../src/auth/models/register.dto.ts",
       "../src/common/common.module.ts",
       "../src/main.ts",
+      "../src/role/role.controller.ts",
+      "../src/role/role.entity.ts",
+      "../src/role/role.module.ts",
+      "../src/role/role.service.ts",
       "../src/user/models/user-create.dto.ts",
       "../src/user/models/user-update.dto.ts",
       "../src/user/models/user.entity.ts",

@@ -39,6 +39,9 @@ export class AuthController {
       last_name: body.last_name,
       email: body.email,
       password: hashed,
+      role: {
+        id: 2,
+      },
     });
   }
 
@@ -69,12 +72,12 @@ export class AuthController {
   @UseGuards(AuthGuard)
   async user(@Req() request: Request) {
     const cookie = request.cookies['jwt'];
-    
+
     const data = await this.jwtService.verifyAsync(cookie);
-    
+
     return this.userService.findOne({ id: data['id'] });
   }
-  
+
   @Post('logout')
   @UseGuards(AuthGuard)
   async logout(@Res({ passthrough: true }) response: Response) {
