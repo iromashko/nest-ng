@@ -3631,9 +3631,14 @@
         "signature": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373",
         "affectsGlobalScope": false
       },
+      "../src/auth/auth.guard.ts": {
+        "version": "d60d60f005ebc56f31e3c80e9be4f9be541ef380d253e20d0e6ae9c07c79bf29",
+        "signature": "38fbad15ad5d61042a49ec75eaef1016b1c62f8ecad545a61a5409cbe4cf822c",
+        "affectsGlobalScope": false
+      },
       "../src/auth/auth.controller.ts": {
-        "version": "3f32676e34a184963626849fb5576d77150e401d498562290d518cde1c7d4b9c",
-        "signature": "0c69b288d2802da990e208721d9f1d36dbd59dab264653b367fd1c3aca68bd50",
+        "version": "acef4f11b333dbf4e90e3e44700735d20e2e53e06263680dab0a84d63db5e8c3",
+        "signature": "fded34ceb6420abf8ecdcde73a444a083422645eb5dc97b2213a426a5e993c19",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.module.ts": {
@@ -7180,8 +7185,13 @@
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../node_modules/@types/bcrypt/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
+        "../src/auth/auth.guard.ts",
         "../src/auth/models/register.dto.ts",
         "../src/user/user.service.ts"
+      ],
+      "../src/auth/auth.guard.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/jwt/index.d.ts"
       ],
       "../src/auth/auth.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10255,6 +10265,10 @@
         "../src/user/models/user.entity.ts",
         "../src/user/user.service.ts"
       ],
+      "../src/auth/auth.guard.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/jwt/index.d.ts"
+      ],
       "../src/user/user.controller.ts": [
         "../src/user/models/user.entity.ts",
         "../src/user/user.service.ts"
@@ -11082,6 +11096,7 @@
       "../src/app.module.ts",
       "../src/app.service.ts",
       "../src/auth/auth.controller.ts",
+      "../src/auth/auth.guard.ts",
       "../src/auth/auth.module.ts",
       "../src/auth/models/register.dto.ts",
       "../src/main.ts",
