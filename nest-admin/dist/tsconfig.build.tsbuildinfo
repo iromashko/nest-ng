@@ -2947,8 +2947,8 @@
         "affectsGlobalScope": false
       },
       "../src/user/user.service.ts": {
-        "version": "fc5bcd9bbb73a51ac4cf7d5a77030e74e8e1fd859ff34abc9b3d60b751e1255a",
-        "signature": "24ae9fb8ac9fee0eb567a597cc468176f6f991c0cac186911afd36411cead577",
+        "version": "0df692b565b29126722cb6320716cceb193b3ea1f39bfdce10f01d988a75c40c",
+        "signature": "8b70bec9b4225d8099297f7de14349d743506ec5a8aa683c58e9da2eff77fca1",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/bcrypt/index.d.ts": {
@@ -3591,9 +3591,14 @@
         "signature": "38fbad15ad5d61042a49ec75eaef1016b1c62f8ecad545a61a5409cbe4cf822c",
         "affectsGlobalScope": false
       },
+      "../src/user/models/user-update.dto.ts": {
+        "version": "5e75a90acd14ece9a3e8b9a1031821cf04e22664a631fd8452b96a4553981f09",
+        "signature": "5ab4ffaa225002b98058f80546cf45ed00d8f69af99569cfe6132bccafee2c5a",
+        "affectsGlobalScope": false
+      },
       "../src/user/user.controller.ts": {
-        "version": "90487e39fec9a7afb6a39a06d6478e4358992cf26b83ad03b130980fc40bd12f",
-        "signature": "f1afc88663d9765c0609f577d0fbb8fd651047c4e31f43e070c18713daa84862",
+        "version": "9ca2b3713a1a5d378ecf0420d1747551935ca319413cebebbf8303f929f58453",
+        "signature": "37c66cf3256baf75e1114c55b2763b0396dcc509316f8738a8182017ec3a099c",
         "affectsGlobalScope": false
       },
       "../src/user/user.module.ts": {
@@ -7235,6 +7240,7 @@
         "../node_modules/@types/bcrypt/index.d.ts",
         "../src/auth/auth.guard.ts",
         "../src/user/models/user-create.dto.ts",
+        "../src/user/models/user-update.dto.ts",
         "../src/user/models/user.entity.ts",
         "../src/user/user.service.ts"
       ],
@@ -10293,6 +10299,7 @@
       ],
       "../src/user/user.controller.ts": [
         "../src/user/models/user-create.dto.ts",
+        "../src/user/models/user-update.dto.ts",
         "../src/user/models/user.entity.ts",
         "../src/user/user.service.ts"
       ],
@@ -11125,6 +11132,7 @@
       "../src/common/common.module.ts",
       "../src/main.ts",
       "../src/user/models/user-create.dto.ts",
+      "../src/user/models/user-update.dto.ts",
       "../src/user/models/user.entity.ts",
       "../src/user/user.controller.ts",
       "../src/user/user.module.ts",
