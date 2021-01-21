@@ -3681,8 +3681,28 @@
         "signature": "917746f451b9febce5f684d7e8c86df5f7486ad7e87e4c1aed4a48f4f0c83650",
         "affectsGlobalScope": false
       },
+      "../src/permission/permission.entity.ts": {
+        "version": "b4618ee6a6b5d22a8065200f828a191f86fc4cabf523c71b979fb36c8e0a9951",
+        "signature": "2ab5775b344e3659a72fcc7aa7adbd154c0170aef3f8c10b79148b08dc2435fb",
+        "affectsGlobalScope": false
+      },
+      "../src/permission/permission.service.ts": {
+        "version": "29ba359c2690b10aeeba430c2c22503626ed9af5f07624d61db71c62ab52304a",
+        "signature": "ff39bc0fbccd9890fccc6e9b036bc6eb96459766e53250f5f52cf19645735c12",
+        "affectsGlobalScope": false
+      },
+      "../src/permission/permission.controller.ts": {
+        "version": "a2648a370b92f10f055785eba0836af445a89e1918b1d151b5920ef0fb9fdc64",
+        "signature": "40eb7e171a667a7cb770df0d7e58a3cbf3fe48226cc3a836286af9c33978ebb0",
+        "affectsGlobalScope": false
+      },
+      "../src/permission/permission.module.ts": {
+        "version": "5c924007e6e310dfa3ffba3df826dc6a3b05755e72bf41443f306fb37ce95d8b",
+        "signature": "59ee49e0d42e01d86721842a56390dc22b5f60a5f681449ff7a8582b580c32a3",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "87340791a2269945f0c525223cb8d183a4adac80f255efde206b0ab077d9b866",
+        "version": "d70bf1be525f37ef66fa338657ae4f271e1b397db95263558021ab4d4eff9ea1",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -7211,6 +7231,7 @@
         "../src/app.service.ts",
         "../src/auth/auth.module.ts",
         "../src/common/common.module.ts",
+        "../src/permission/permission.module.ts",
         "../src/role/role.module.ts",
         "../src/user/user.module.ts"
       ],
@@ -7248,6 +7269,27 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@types/cookie-parser/index.d.ts",
         "../src/app.module.ts"
+      ],
+      "../src/permission/permission.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/permission/permission.entity.ts",
+        "../src/permission/permission.service.ts"
+      ],
+      "../src/permission/permission.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/permission/permission.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/permission/permission.controller.ts",
+        "../src/permission/permission.entity.ts",
+        "../src/permission/permission.service.ts"
+      ],
+      "../src/permission/permission.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/permission/permission.entity.ts"
       ],
       "../src/role/role.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10340,6 +10382,14 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/jwt/index.d.ts"
       ],
+      "../src/permission/permission.controller.ts": [
+        "../src/permission/permission.entity.ts",
+        "../src/permission/permission.service.ts"
+      ],
+      "../src/permission/permission.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/permission/permission.entity.ts"
+      ],
       "../src/role/role.controller.ts": [
         "../src/role/role.entity.ts",
         "../src/role/role.service.ts"
@@ -11185,6 +11235,10 @@
       "../src/auth/models/register.dto.ts",
       "../src/common/common.module.ts",
       "../src/main.ts",
+      "../src/permission/permission.controller.ts",
+      "../src/permission/permission.entity.ts",
+      "../src/permission/permission.module.ts",
+      "../src/permission/permission.service.ts",
       "../src/role/role.controller.ts",
       "../src/role/role.entity.ts",
       "../src/role/role.module.ts",
