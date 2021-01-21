@@ -2941,9 +2941,14 @@
         "signature": "d90445b6258429107e0ebd116bc5476ebe155df2206f70aadf058ba28f092db8",
         "affectsGlobalScope": false
       },
+      "../src/permission/permission.entity.ts": {
+        "version": "b4618ee6a6b5d22a8065200f828a191f86fc4cabf523c71b979fb36c8e0a9951",
+        "signature": "2ab5775b344e3659a72fcc7aa7adbd154c0170aef3f8c10b79148b08dc2435fb",
+        "affectsGlobalScope": false
+      },
       "../src/role/role.entity.ts": {
-        "version": "6feaa907a8541f3f604e083a632f5c878712a0281ca3374ccad748e8a0c9f985",
-        "signature": "ac267b931455931074ee940600f18c2f4479af7be7591ef398bacc83dba59401",
+        "version": "170fe15e5996afca6407cf877b788bf87999373df75df3ee4a8fe6e8d6492c4f",
+        "signature": "409d8a1d87087bbdc8c296808a31864ea1a8f172992b3a16633af672a839694f",
         "affectsGlobalScope": false
       },
       "../src/user/models/user.entity.ts": {
@@ -3667,23 +3672,18 @@
         "affectsGlobalScope": false
       },
       "../src/role/role.service.ts": {
-        "version": "759d48cd15d9afcb001609b322e3ba68de5d745afcbc281d7ae204e9de2ac9b5",
+        "version": "3f2a6a4a04156a483dd5187142a8baf4e1416142a892c2a6acc8f70ab916e376",
         "signature": "29184727ae1719ad1d3af3e3db45fab764dafb1d451803ce8b1ee01b0d40a6d6",
         "affectsGlobalScope": false
       },
       "../src/role/role.controller.ts": {
-        "version": "e0c20790dbfa455c3f069fde346b4c1ccdad2b9d698ef9c85783c550f039696e",
-        "signature": "b8d9fe52bfd48a74b2a4abbc3737b9673483e19fc5d9caa3534823cc4b8eabe2",
+        "version": "f140ffc9c8c5a1b1ac60be2192e4f632dbd268bf5d73fb37c46ee53122ba6dad",
+        "signature": "7a4159ea85b8d0c57a1dcb5bd605c143bedc65853306a058d489d9c549da706b",
         "affectsGlobalScope": false
       },
       "../src/role/role.module.ts": {
         "version": "b8faa74d8727f2b7577c9dd138490afd4bce44c366692afd1855b2847a754cf5",
         "signature": "917746f451b9febce5f684d7e8c86df5f7486ad7e87e4c1aed4a48f4f0c83650",
-        "affectsGlobalScope": false
-      },
-      "../src/permission/permission.entity.ts": {
-        "version": "b4618ee6a6b5d22a8065200f828a191f86fc4cabf523c71b979fb36c8e0a9951",
-        "signature": "2ab5775b344e3659a72fcc7aa7adbd154c0170aef3f8c10b79148b08dc2435fb",
         "affectsGlobalScope": false
       },
       "../src/permission/permission.service.ts": {
@@ -7297,7 +7297,8 @@
         "../src/role/role.service.ts"
       ],
       "../src/role/role.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/permission/permission.entity.ts"
       ],
       "../src/role/role.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10393,6 +10394,9 @@
       "../src/role/role.controller.ts": [
         "../src/role/role.entity.ts",
         "../src/role/role.service.ts"
+      ],
+      "../src/role/role.entity.ts": [
+        "../src/permission/permission.entity.ts"
       ],
       "../src/role/role.service.ts": [
         "../node_modules/typeorm/index.d.ts",
