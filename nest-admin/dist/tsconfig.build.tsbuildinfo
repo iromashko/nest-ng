@@ -3846,9 +3846,54 @@
         "signature": "628233a1127b48d1d83376b4a4b3d760526c1029aa4e769d01dc6fd7d172f1b9",
         "affectsGlobalScope": false
       },
+      "../node_modules/@types/json2csv/transforms/base.d.ts": {
+        "version": "1f8d0a5850680d5109e64a5f85d980895f8975f0e25872c32a7639ef8a5a0867",
+        "signature": "1f8d0a5850680d5109e64a5f85d980895f8975f0e25872c32a7639ef8a5a0867",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/json2csv/transforms/flatten.d.ts": {
+        "version": "e31130ce795491d398caa6bed0f520c1c9039fc6dc3e54c06b025c7cdb541369",
+        "signature": "e31130ce795491d398caa6bed0f520c1c9039fc6dc3e54c06b025c7cdb541369",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/json2csv/transforms/unwind.d.ts": {
+        "version": "8f4db9aeb81bf931a5f6af477852debd7648ed92e75724e92d70b8a6015162a2",
+        "signature": "8f4db9aeb81bf931a5f6af477852debd7648ed92e75724e92d70b8a6015162a2",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/json2csv/transforms/index.d.ts": {
+        "version": "00caf9c6aca65efdb52b6ca460f3e65fa0d4ac851b3c945071bbb2609dcfb8ff",
+        "signature": "00caf9c6aca65efdb52b6ca460f3e65fa0d4ac851b3c945071bbb2609dcfb8ff",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/json2csv/JSON2CSVBase.d.ts": {
+        "version": "808e45e801940564c5f5645e297d548071ab81577073481c406077ea3f54830e",
+        "signature": "808e45e801940564c5f5645e297d548071ab81577073481c406077ea3f54830e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/json2csv/JSON2CSVParser.d.ts": {
+        "version": "0a3749c5d23b33021fca2c937e4ad67315a462c53e48ac5dd18dc7d4fbb46cd8",
+        "signature": "0a3749c5d23b33021fca2c937e4ad67315a462c53e48ac5dd18dc7d4fbb46cd8",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/json2csv/JSON2CSVTransform.d.ts": {
+        "version": "5d65eef4fd60dcaa5721a1cf97dd4e8d1d0445093ecefa09a28815661f64f374",
+        "signature": "5d65eef4fd60dcaa5721a1cf97dd4e8d1d0445093ecefa09a28815661f64f374",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/json2csv/JSON2CSVAsyncParser.d.ts": {
+        "version": "20623a1b3f44d66445961a5fc04a0b2ebecd7419baeafbbfceab604415d66c2c",
+        "signature": "20623a1b3f44d66445961a5fc04a0b2ebecd7419baeafbbfceab604415d66c2c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/json2csv/index.d.ts": {
+        "version": "282ebe659b6717361da15d5e1711f34025a316eee666526b1f9c46181cabf9e6",
+        "signature": "282ebe659b6717361da15d5e1711f34025a316eee666526b1f9c46181cabf9e6",
+        "affectsGlobalScope": false
+      },
       "../src/order/order.controller.ts": {
-        "version": "99b45b2fd99b31dbe1807e7569de1e96240fa777943f02e738a2c92e196190ec",
-        "signature": "8979743dfb281def03ac70ec3fc445eae88c290c9564b6c79bc7be587a45ee69",
+        "version": "137524860b9145ce117b4adb6e6e794440f666e0b1e3a0521bbdb7e2c4422ce8",
+        "signature": "21c54dd5ef4452a4fd23f04d0543ab50c12bbc85b2ddb6cf1ec420dd031ab4b0",
         "affectsGlobalScope": false
       },
       "../src/order/order.module.ts": {
@@ -5164,6 +5209,41 @@
       "../node_modules/@types/jest/index.d.ts": [
         "../node_modules/jest-diff/build/index.d.ts",
         "../node_modules/pretty-format/build/index.d.ts"
+      ],
+      "../node_modules/@types/json2csv/JSON2CSVAsyncParser.d.ts": [
+        "../node_modules/@types/json2csv/JSON2CSVBase.d.ts",
+        "../node_modules/@types/json2csv/JSON2CSVTransform.d.ts",
+        "../node_modules/@types/node/stream.d.ts"
+      ],
+      "../node_modules/@types/json2csv/JSON2CSVBase.d.ts": [
+        "../node_modules/@types/json2csv/transforms/index.d.ts"
+      ],
+      "../node_modules/@types/json2csv/JSON2CSVParser.d.ts": [
+        "../node_modules/@types/json2csv/JSON2CSVBase.d.ts"
+      ],
+      "../node_modules/@types/json2csv/JSON2CSVTransform.d.ts": [
+        "../node_modules/@types/json2csv/JSON2CSVBase.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts"
+      ],
+      "../node_modules/@types/json2csv/index.d.ts": [
+        "../node_modules/@types/json2csv/JSON2CSVAsyncParser.d.ts",
+        "../node_modules/@types/json2csv/JSON2CSVBase.d.ts",
+        "../node_modules/@types/json2csv/JSON2CSVParser.d.ts",
+        "../node_modules/@types/json2csv/JSON2CSVTransform.d.ts",
+        "../node_modules/@types/json2csv/transforms/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts"
+      ],
+      "../node_modules/@types/json2csv/transforms/flatten.d.ts": [
+        "../node_modules/@types/json2csv/transforms/base.d.ts"
+      ],
+      "../node_modules/@types/json2csv/transforms/index.d.ts": [
+        "../node_modules/@types/json2csv/transforms/base.d.ts",
+        "../node_modules/@types/json2csv/transforms/flatten.d.ts",
+        "../node_modules/@types/json2csv/transforms/unwind.d.ts"
+      ],
+      "../node_modules/@types/json2csv/transforms/unwind.d.ts": [
+        "../node_modules/@types/json2csv/transforms/base.d.ts"
       ],
       "../node_modules/@types/jsonwebtoken/index.d.ts": [
         "../node_modules/@types/node/index.d.ts"
@@ -7499,7 +7579,11 @@
       ],
       "../src/order/order.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/json2csv/index.d.ts",
         "../src/auth/auth.guard.ts",
+        "../src/order/order-item.entity.ts",
+        "../src/order/order.entity.ts",
         "../src/order/order.service.ts"
       ],
       "../src/order/order.entity.ts": [
@@ -8460,6 +8544,41 @@
       "../node_modules/@types/jest/index.d.ts": [
         "../node_modules/jest-diff/build/index.d.ts",
         "../node_modules/pretty-format/build/index.d.ts"
+      ],
+      "../node_modules/@types/json2csv/JSON2CSVAsyncParser.d.ts": [
+        "../node_modules/@types/json2csv/JSON2CSVBase.d.ts",
+        "../node_modules/@types/json2csv/JSON2CSVTransform.d.ts",
+        "../node_modules/@types/node/stream.d.ts"
+      ],
+      "../node_modules/@types/json2csv/JSON2CSVBase.d.ts": [
+        "../node_modules/@types/json2csv/transforms/index.d.ts"
+      ],
+      "../node_modules/@types/json2csv/JSON2CSVParser.d.ts": [
+        "../node_modules/@types/json2csv/JSON2CSVBase.d.ts"
+      ],
+      "../node_modules/@types/json2csv/JSON2CSVTransform.d.ts": [
+        "../node_modules/@types/json2csv/JSON2CSVBase.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts"
+      ],
+      "../node_modules/@types/json2csv/index.d.ts": [
+        "../node_modules/@types/json2csv/JSON2CSVAsyncParser.d.ts",
+        "../node_modules/@types/json2csv/JSON2CSVBase.d.ts",
+        "../node_modules/@types/json2csv/JSON2CSVParser.d.ts",
+        "../node_modules/@types/json2csv/JSON2CSVTransform.d.ts",
+        "../node_modules/@types/json2csv/transforms/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts"
+      ],
+      "../node_modules/@types/json2csv/transforms/flatten.d.ts": [
+        "../node_modules/@types/json2csv/transforms/base.d.ts"
+      ],
+      "../node_modules/@types/json2csv/transforms/index.d.ts": [
+        "../node_modules/@types/json2csv/transforms/base.d.ts",
+        "../node_modules/@types/json2csv/transforms/flatten.d.ts",
+        "../node_modules/@types/json2csv/transforms/unwind.d.ts"
+      ],
+      "../node_modules/@types/json2csv/transforms/unwind.d.ts": [
+        "../node_modules/@types/json2csv/transforms/base.d.ts"
       ],
       "../node_modules/@types/jsonwebtoken/index.d.ts": [
         "../node_modules/@types/node/index.d.ts"
@@ -10757,6 +10876,7 @@
         "../src/order/order.entity.ts"
       ],
       "../src/order/order.controller.ts": [
+        "../node_modules/@types/express/index.d.ts",
         "../src/common/paginate-response.interface.ts",
         "../src/order/order.service.ts"
       ],
@@ -11052,6 +11172,15 @@
       "../node_modules/@types/istanbul-reports/index.d.ts",
       "../node_modules/@types/jest/index.d.ts",
       "../node_modules/@types/json-schema/index.d.ts",
+      "../node_modules/@types/json2csv/JSON2CSVAsyncParser.d.ts",
+      "../node_modules/@types/json2csv/JSON2CSVBase.d.ts",
+      "../node_modules/@types/json2csv/JSON2CSVParser.d.ts",
+      "../node_modules/@types/json2csv/JSON2CSVTransform.d.ts",
+      "../node_modules/@types/json2csv/index.d.ts",
+      "../node_modules/@types/json2csv/transforms/base.d.ts",
+      "../node_modules/@types/json2csv/transforms/flatten.d.ts",
+      "../node_modules/@types/json2csv/transforms/index.d.ts",
+      "../node_modules/@types/json2csv/transforms/unwind.d.ts",
       "../node_modules/@types/json5/index.d.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../node_modules/@types/mime/index.d.ts",
