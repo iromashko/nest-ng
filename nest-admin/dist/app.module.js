@@ -15,6 +15,7 @@ const common_module_1 = require("./common/common.module");
 const role_module_1 = require("./role/role.module");
 const permission_module_1 = require("./permission/permission.module");
 const product_module_1 = require("./product/product.module");
+const order_module_1 = require("./order/order.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -36,6 +37,7 @@ AppModule = __decorate([
             role_module_1.RoleModule,
             permission_module_1.PermissionModule,
             product_module_1.ProductModule,
+            order_module_1.OrderModule,
         ],
     })
 ], AppModule);

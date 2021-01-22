@@ -3831,8 +3831,33 @@
         "signature": "7f8b34d3314e0b7048eab6a82a4f0bf423213dfd64d60f0c5e178bde34c23841",
         "affectsGlobalScope": false
       },
+      "../src/order/order.entity.ts": {
+        "version": "91612b8590d60ddc6e64f6e4f3c4c2ef5df8460ad8ab742dee380a4c93eac50a",
+        "signature": "7507664105ddf4a2b5270679ead34711b2af61f12bfdb89cc1d96253b4b9b8bf",
+        "affectsGlobalScope": false
+      },
+      "../src/order/order-item.entity.ts": {
+        "version": "1b202dee292c1d53aa243c0873cc0f1eee7882adbd3fdecc94a7924589c8a7e6",
+        "signature": "11bc31833590f3595a018fc5a5df82fc18a2b597f96981fb8fbb42ce36b05d30",
+        "affectsGlobalScope": false
+      },
+      "../src/order/order.service.ts": {
+        "version": "5f9be32db448b72a13ae391a80e198b713c0f338e017e4813de2cd275402f46a",
+        "signature": "628233a1127b48d1d83376b4a4b3d760526c1029aa4e769d01dc6fd7d172f1b9",
+        "affectsGlobalScope": false
+      },
+      "../src/order/order.controller.ts": {
+        "version": "99b45b2fd99b31dbe1807e7569de1e96240fa777943f02e738a2c92e196190ec",
+        "signature": "8979743dfb281def03ac70ec3fc445eae88c290c9564b6c79bc7be587a45ee69",
+        "affectsGlobalScope": false
+      },
+      "../src/order/order.module.ts": {
+        "version": "cb5e3017ec8065ad17d5e26a2ab37babfded38c9f1e4e2c5314a721422151076",
+        "signature": "9b2b198dbfcb909c95538f26f07ecfed022ca48dd8f81d8acacb0ba38aecc202",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "7aeeb32a2dde4681b73bd6670b1cd1afe2410132b77a7717e8e812e8ecf50121",
+        "version": "b79e2eb82056f2c53fa00cfe0e76dd3048546031a2e94393f89445f2dec9561d",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -7418,6 +7443,7 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/auth/auth.module.ts",
         "../src/common/common.module.ts",
+        "../src/order/order.module.ts",
         "../src/permission/permission.module.ts",
         "../src/product/product.module.ts",
         "../src/role/role.module.ts",
@@ -7466,6 +7492,37 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@types/cookie-parser/index.d.ts",
         "../src/app.module.ts"
+      ],
+      "../src/order/order-item.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/order/order.entity.ts"
+      ],
+      "../src/order/order.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/auth.guard.ts",
+        "../src/order/order.service.ts"
+      ],
+      "../src/order/order.entity.ts": [
+        "../node_modules/class-transformer/types/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/order/order-item.entity.ts"
+      ],
+      "../src/order/order.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/common/common.module.ts",
+        "../src/order/order-item.entity.ts",
+        "../src/order/order.controller.ts",
+        "../src/order/order.entity.ts",
+        "../src/order/order.service.ts"
+      ],
+      "../src/order/order.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/common/abstract.service.ts",
+        "../src/common/paginate-response.interface.ts",
+        "../src/order/order.entity.ts"
       ],
       "../src/permission/permission.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10696,6 +10753,22 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/common/paginate-response.interface.ts"
       ],
+      "../src/order/order-item.entity.ts": [
+        "../src/order/order.entity.ts"
+      ],
+      "../src/order/order.controller.ts": [
+        "../src/common/paginate-response.interface.ts",
+        "../src/order/order.service.ts"
+      ],
+      "../src/order/order.entity.ts": [
+        "../src/order/order-item.entity.ts"
+      ],
+      "../src/order/order.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/common/abstract.service.ts",
+        "../src/common/paginate-response.interface.ts",
+        "../src/order/order.entity.ts"
+      ],
       "../src/permission/permission.controller.ts": [
         "../src/permission/permission.entity.ts",
         "../src/permission/permission.service.ts"
@@ -11591,6 +11664,11 @@
       "../src/common/common.module.ts",
       "../src/common/paginate-response.interface.ts",
       "../src/main.ts",
+      "../src/order/order-item.entity.ts",
+      "../src/order/order.controller.ts",
+      "../src/order/order.entity.ts",
+      "../src/order/order.module.ts",
+      "../src/order/order.service.ts",
       "../src/permission/permission.controller.ts",
       "../src/permission/permission.entity.ts",
       "../src/permission/permission.module.ts",
