@@ -24,9 +24,22 @@ export class OrderService extends AbstractService {
         email: order.email,
         total: order.total,
         created_at: order.created_at,
-        order_items: order.order_items
+        order_items: order.order_items,
       })),
       meta,
     };
+  }
+
+  async chart() {
+    return this.orderRepository.query(`
+      SELECT
+        DATE_FORMAT(o.created_at, '%Y-%m-%d') AS date,
+        sum(i.price * i.quantity) AS sum
+      FROM
+        orders o
+        JOIN order_items i ON o.id = i.order_id
+      GROUP BY
+        date
+    `);
   }
 }
