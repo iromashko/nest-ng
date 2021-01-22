@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { PublicComponent } from './public.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [PublicComponent],
+  imports: [CommonModule],
 })
-export class PublicModule { }
+export class PublicModule {}
