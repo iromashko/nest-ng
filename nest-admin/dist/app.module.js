@@ -16,6 +16,8 @@ const role_module_1 = require("./role/role.module");
 const permission_module_1 = require("./permission/permission.module");
 const product_module_1 = require("./product/product.module");
 const order_module_1 = require("./order/order.module");
+const core_1 = require("@nestjs/core");
+const permission_guard_1 = require("./permission/permission.guard");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -39,6 +41,10 @@ AppModule = __decorate([
             product_module_1.ProductModule,
             order_module_1.OrderModule,
         ],
+        providers: [{
+                provide: core_1.APP_GUARD,
+                useClass: permission_guard_1.PermissionGuard
+            }]
     })
 ], AppModule);
 exports.AppModule = AppModule;

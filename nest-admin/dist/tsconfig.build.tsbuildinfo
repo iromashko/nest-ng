@@ -3691,18 +3691,23 @@
         "signature": "917746f451b9febce5f684d7e8c86df5f7486ad7e87e4c1aed4a48f4f0c83650",
         "affectsGlobalScope": false
       },
+      "../src/permission/has-permission.decorator.ts": {
+        "version": "276f5ae4fcd90be9f5becae9cf47439017328b61bce7f5759311bc3601c8bb98",
+        "signature": "6b1864e723e4606ea80177b0fe7f56fc69f48834e3321c2d725eba958f98db37",
+        "affectsGlobalScope": false
+      },
       "../src/permission/permission.service.ts": {
         "version": "39bfff57db5b5fd1b19112d28e7aa5b27d4d33716103ff5563c4e3162ab9e133",
         "signature": "d60687d4b6c53666fd1a9f7eddd7870a5d3d16aed2fe1cef2f2b07d4c8f8b75e",
         "affectsGlobalScope": false
       },
       "../src/permission/permission.controller.ts": {
-        "version": "a2648a370b92f10f055785eba0836af445a89e1918b1d151b5920ef0fb9fdc64",
+        "version": "a9d9b32ec1787a8a6a75382081be153e848a023872fa4878b295a9a029e57fc7",
         "signature": "40eb7e171a667a7cb770df0d7e58a3cbf3fe48226cc3a836286af9c33978ebb0",
         "affectsGlobalScope": false
       },
       "../src/permission/permission.module.ts": {
-        "version": "5c924007e6e310dfa3ffba3df826dc6a3b05755e72bf41443f306fb37ce95d8b",
+        "version": "232aa985b3006fd7e1077d7b1cfe41072fda5de1acfe4aaaeab247eb03f9acce",
         "signature": "59ee49e0d42e01d86721842a56390dc22b5f60a5f681449ff7a8582b580c32a3",
         "affectsGlobalScope": false
       },
@@ -3901,11 +3906,6 @@
         "signature": "9b2b198dbfcb909c95538f26f07ecfed022ca48dd8f81d8acacb0ba38aecc202",
         "affectsGlobalScope": false
       },
-      "../src/app.module.ts": {
-        "version": "b79e2eb82056f2c53fa00cfe0e76dd3048546031a2e94393f89445f2dec9561d",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@nestjs/core/adapters/index.d.ts": {
         "version": "8b0b6a4c032a56d5651f7dd02ba3f05fbfe4131c4095093633cda3cae0991972",
         "signature": "8b0b6a4c032a56d5651f7dd02ba3f05fbfe4131c4095093633cda3cae0991972",
@@ -4079,6 +4079,16 @@
       "../node_modules/@nestjs/core/index.d.ts": {
         "version": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d",
         "signature": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d",
+        "affectsGlobalScope": false
+      },
+      "../src/permission/permission.guard.ts": {
+        "version": "cc814af96670c8e6933c8dd9000f40a9c58117b62880f6fbb72dde44a28118bf",
+        "signature": "7325c76d3bdbe65f8e26ad0573ba30dd0be443e12af0c4c26d7f81d1da23113d",
+        "affectsGlobalScope": false
+      },
+      "../src/app.module.ts": {
+        "version": "e1ca14c40ab217462952937bc3af7801a983fef5076cb917f75bc3fa8f85c38b",
+        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/cookie-parser/index.d.ts": {
@@ -7520,10 +7530,12 @@
       ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/auth/auth.module.ts",
         "../src/common/common.module.ts",
         "../src/order/order.module.ts",
+        "../src/permission/permission.guard.ts",
         "../src/permission/permission.module.ts",
         "../src/product/product.module.ts",
         "../src/role/role.module.ts",
@@ -7608,17 +7620,31 @@
         "../src/common/paginate-response.interface.ts",
         "../src/order/order.entity.ts"
       ],
+      "../src/permission/has-permission.decorator.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
       "../src/permission/permission.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/auth.guard.ts",
+        "../src/permission/has-permission.decorator.ts",
         "../src/permission/permission.entity.ts",
         "../src/permission/permission.service.ts"
       ],
       "../src/permission/permission.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
+      "../src/permission/permission.guard.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../src/auth/auth.service.ts",
+        "../src/role/role.service.ts",
+        "../src/user/models/user.entity.ts",
+        "../src/user/user.service.ts"
+      ],
       "../src/permission/permission.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/common/common.module.ts",
         "../src/permission/permission.controller.ts",
         "../src/permission/permission.entity.ts",
         "../src/permission/permission.service.ts"
@@ -10889,9 +10915,19 @@
         "../src/common/paginate-response.interface.ts",
         "../src/order/order.entity.ts"
       ],
+      "../src/permission/has-permission.decorator.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
       "../src/permission/permission.controller.ts": [
         "../src/permission/permission.entity.ts",
         "../src/permission/permission.service.ts"
+      ],
+      "../src/permission/permission.guard.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../src/auth/auth.service.ts",
+        "../src/role/role.service.ts",
+        "../src/user/user.service.ts"
       ],
       "../src/permission/permission.service.ts": [
         "../node_modules/typeorm/index.d.ts",
@@ -11798,8 +11834,10 @@
       "../src/order/order.entity.ts",
       "../src/order/order.module.ts",
       "../src/order/order.service.ts",
+      "../src/permission/has-permission.decorator.ts",
       "../src/permission/permission.controller.ts",
       "../src/permission/permission.entity.ts",
+      "../src/permission/permission.guard.ts",
       "../src/permission/permission.module.ts",
       "../src/permission/permission.service.ts",
       "../src/product/models/product-create.dto.ts",
