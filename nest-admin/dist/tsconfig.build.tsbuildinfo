@@ -3706,8 +3706,38 @@
         "signature": "59ee49e0d42e01d86721842a56390dc22b5f60a5f681449ff7a8582b580c32a3",
         "affectsGlobalScope": false
       },
+      "../src/product/models/product.entity.ts": {
+        "version": "9e07f2037c66b77d38003bcc69f9abf7e1033173b2a5ee3cf84d87c2926cffb8",
+        "signature": "4f4838899384e621c7e82ed58c28bcb15a15698dc831bc840aa8bc4ae2749a03",
+        "affectsGlobalScope": false
+      },
+      "../src/product/models/product-create.dto.ts": {
+        "version": "1a7272341dcfe995722b254e969e7fd3f51bbe9c2c6bb05dad58cf09e5083762",
+        "signature": "cb96a8231ebab66b9f49e6d04877619cfa0bb4e3c2ee22bccf75cb8616da2d68",
+        "affectsGlobalScope": false
+      },
+      "../src/product/models/product-update.dto.ts": {
+        "version": "2cdaff5dd5a417c5813d74ccc01d5baef0394e77ba97c7f86270300ef0a4b207",
+        "signature": "6d342479533c516a67e6b38f48856bbd09f08d9546b93d1fbf76b86fc0ed43fd",
+        "affectsGlobalScope": false
+      },
+      "../src/product/product.service.ts": {
+        "version": "4acac9177c1cc0f9e5207d89ccb7435ff8d22fd3933a89f24496ba98d8e40da0",
+        "signature": "73a496626535eb7dd80dc618143389e9922376b6658bccdb4ff6b9c3f6d8ea61",
+        "affectsGlobalScope": false
+      },
+      "../src/product/product.controller.ts": {
+        "version": "00639d81a9a288d3a26d4d7b900d3e366929af3d9e310812b49a14bd8d5eb99e",
+        "signature": "47ff3293a84af1fa0fd7cb2087f797214987713a0130e6e1a1242d91f1f951c7",
+        "affectsGlobalScope": false
+      },
+      "../src/product/product.module.ts": {
+        "version": "01a69aa92abe688b31023a2c31998973371ef8b3e831ef0bc5f456bbe8544a48",
+        "signature": "7f8b34d3314e0b7048eab6a82a4f0bf423213dfd64d60f0c5e178bde34c23841",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "24063a170897b468798765bfa2556a5fb94437dddd1a942b491173f3b04ea7e1",
+        "version": "7aeeb32a2dde4681b73bd6670b1cd1afe2410132b77a7717e8e812e8ecf50121",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -7231,6 +7261,7 @@
         "../src/auth/auth.module.ts",
         "../src/common/common.module.ts",
         "../src/permission/permission.module.ts",
+        "../src/product/product.module.ts",
         "../src/role/role.module.ts",
         "../src/user/user.module.ts"
       ],
@@ -7299,6 +7330,34 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/common/abstract.service.ts",
         "../src/permission/permission.entity.ts"
+      ],
+      "../src/product/models/product-create.dto.ts": [
+        "../node_modules/class-validator/types/index.d.ts"
+      ],
+      "../src/product/models/product.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/product/product.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/auth.guard.ts",
+        "../src/product/models/product-create.dto.ts",
+        "../src/product/models/product-update.dto.ts",
+        "../src/product/product.service.ts"
+      ],
+      "../src/product/product.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/common/common.module.ts",
+        "../src/product/models/product.entity.ts",
+        "../src/product/product.controller.ts",
+        "../src/product/product.service.ts"
+      ],
+      "../src/product/product.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/common/abstract.service.ts",
+        "../src/product/models/product.entity.ts"
       ],
       "../src/role/role.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10412,6 +10471,17 @@
         "../src/common/abstract.service.ts",
         "../src/permission/permission.entity.ts"
       ],
+      "../src/product/product.controller.ts": [
+        "../src/common/paginate-response.interface.ts",
+        "../src/product/models/product-create.dto.ts",
+        "../src/product/models/product-update.dto.ts",
+        "../src/product/product.service.ts"
+      ],
+      "../src/product/product.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/common/abstract.service.ts",
+        "../src/product/models/product.entity.ts"
+      ],
       "../src/role/role.controller.ts": [
         "../src/role/role.entity.ts",
         "../src/role/role.service.ts"
@@ -11271,6 +11341,12 @@
       "../src/permission/permission.entity.ts",
       "../src/permission/permission.module.ts",
       "../src/permission/permission.service.ts",
+      "../src/product/models/product-create.dto.ts",
+      "../src/product/models/product-update.dto.ts",
+      "../src/product/models/product.entity.ts",
+      "../src/product/product.controller.ts",
+      "../src/product/product.module.ts",
+      "../src/product/product.service.ts",
       "../src/role/role.controller.ts",
       "../src/role/role.entity.ts",
       "../src/role/role.module.ts",
