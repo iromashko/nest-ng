@@ -7,10 +7,12 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
+import { HasPermission } from 'src/permission/has-permission.decorator';
 import { Role } from './role.entity';
 import { RoleService } from './role.service';
 
 @Controller('roles')
+@HasPermission('roles')
 export class RoleController {
   constructor(private roleService: RoleService) {}
 

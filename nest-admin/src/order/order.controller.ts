@@ -14,9 +14,11 @@ import { Response } from 'express';
 import { Parser } from 'json2csv';
 import { Order } from './order.entity';
 import { OrderItem } from './order-item.entity';
+import { HasPermission } from 'src/permission/has-permission.decorator';
 
 @UseInterceptors(ClassSerializerInterceptor)
 @UseGuards(AuthGuard)
+@HasPermission('orders')
 @Controller()
 export class OrderController {
   constructor(public orderService: OrderService) {}
@@ -55,7 +57,7 @@ export class OrderController {
           Price: i.price,
           Quantity: i.quantity,
         });
-      })
+      });
     });
 
     const csv = parser.parse(json);
