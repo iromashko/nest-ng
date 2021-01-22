@@ -1,0 +1,50 @@
+<main class="form-signin" (submit)="submit()">
+  <form>
+    <h1 class="h3 mb-3 fw-normal">Please register</h1>
+
+    <input
+      class="form-control"
+      placeholder="First Name"
+      name="First Name"
+      required
+      [(ngModel)]="firstName"
+      />
+
+      <input
+      class="form-control"
+      placeholder="Last Name"
+      name="Last Name"
+      [(ngModel)]="lastName"
+      required
+      />
+
+      <input
+      type="email"
+      class="form-control"
+      name="Email"
+      [(ngModel)]="email"
+      placeholder="Email address"
+      required
+      />
+
+      <input
+      type="password"
+      class="form-control"
+      name="Password"
+      [(ngModel)]="password"
+      placeholder="Password"
+      required
+      />
+
+      <input
+      type="password"
+      [(ngModel)]="passwordConfirm"
+      name="Password Confirm"
+      class="form-control"
+      placeholder="Password Confirm"
+      required
+    />
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+  </form>
+</main>
