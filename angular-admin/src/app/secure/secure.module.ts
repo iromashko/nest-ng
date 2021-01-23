@@ -8,6 +8,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
+import { UserCreateComponent } from './users/user-create/user-create.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { UsersComponent } from './users/users.component';
     ProfileComponent,
     DashboardComponent,
     UsersComponent,
+    UserCreateComponent,
+    UserEditComponent,
   ],
   imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule],
   exports: [SecureComponent],

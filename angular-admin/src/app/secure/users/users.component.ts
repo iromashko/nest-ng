@@ -9,13 +9,41 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class UsersComponent implements OnInit {
   users: User[] = [];
+  page = 1;
+  lastPage: number;
 
   constructor(private userService: UserService) {}
 
   ngOnInit(): void {
-    this.userService.all().subscribe((res: any) => {
+    this.load();
+  }
+
+  load(): void {
+    this.userService.all(this.page).subscribe((res: any) => {
       this.users = res.data;
-      console.log(res);
+      this.lastPage = res.meta.last_page;
     });
+  }
+
+  next(): void {
+    if (this.page === this.lastPage) {
+      return;
+    }
+    this.page++;
+    this.load();
+  }
+  prev(): void {
+    if (this.page === 1) {
+      return;
+    }
+    this.page--;
+    this.load();
+  }
+  delete(id: number): void {
+    if (confirm('Are you shure you want to delete this record?')) {
+      this.userService.delete(id).subscribe(() => {
+        this.users = this.users.filter((u) => u.id !== id);
+      });
+    }
   }
 }
