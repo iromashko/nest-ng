@@ -1,27 +1,24 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss', './../public.component.scss'],
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
   firstName: '';
   lastName: '';
   email: '';
   password: '';
   passwordConfirm: '';
 
-  constructor(private http: HttpClient, private router: Router) {}
-
-  ngOnInit(): void {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   public submit(): void {
-    this.http
-      .post(`${environment.api}/register`, {
+    this.authService
+      .register({
         first_name: this.firstName,
         last_name: this.lastName,
         email: this.email,

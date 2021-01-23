@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -13,9 +14,9 @@ export class LoginComponent {
   form: FormGroup;
 
   constructor(
-    private http: HttpClient,
     private router: Router,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private authService: AuthService
   ) {
     this.form = this.fb.group({
       email: '',
@@ -24,10 +25,8 @@ export class LoginComponent {
   }
 
   public submit(): void {
-    this.http
-      .post(`${environment.api}/login`, this.form.getRawValue(), {
-        withCredentials: true,
-      })
+    this.authService
+      .login(this.form.getRawValue())
       .subscribe(() => this.router.navigate(['/']));
   }
 }
