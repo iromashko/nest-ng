@@ -6,6 +6,7 @@ import { RegisterComponent } from './public/register/register.component';
 import { DashboardComponent } from './secure/dashboard/dashboard.component';
 import { ProfileComponent } from './secure/profile/profile.component';
 import { SecureComponent } from './secure/secure.component';
+import { UsersComponent } from './secure/users/users.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,16 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        redirectTo: '/dashboard',
+        pathMatch: 'full',
+      },
+      {
+        path: 'dashboard',
         component: DashboardComponent,
+      },
+      {
+        path: 'users',
+        component: UsersComponent,
       },
       {
         path: 'profile',
