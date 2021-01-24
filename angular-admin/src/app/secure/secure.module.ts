@@ -10,6 +10,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
 import { UserCreateComponent } from './users/user-create/user-create.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
+import { RolesComponent } from './roles/roles.component';
+import { RoleCreateComponent } from './roles/role-create/role-create.component';
+import { RoleEditComponent } from './roles/role-edit/role-edit.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { UserEditComponent } from './user-edit/user-edit.component';
     UsersComponent,
     UserCreateComponent,
     UserEditComponent,
+    RolesComponent,
+    RoleCreateComponent,
+    RoleEditComponent,
   ],
   imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule],
   exports: [SecureComponent],
