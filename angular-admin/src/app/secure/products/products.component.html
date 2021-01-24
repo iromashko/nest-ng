@@ -1,5 +1,7 @@
 <div class="pt-3 pb-2 mb-3 border-bottom">
-  <a routerLink="/products/create" class="btn btn-sm btn-outline-secondary">Add</a>
+  <a routerLink="/products/create" class="btn btn-sm btn-outline-secondary"
+    >Add</a
+  >
 </div>
 
 <div class="table-responsive">
@@ -17,7 +19,7 @@
       <tr *ngFor="let product of products">
         <td>{{ product.id }}</td>
         <td>
-          <img [src]="product.image" height="50">
+          <img [src]="product.image" height="50" />
         </td>
         <td>{{ product.title }}</td>
         <td>{{ product.price }}</td>
@@ -30,7 +32,7 @@
             >
             <a
               class="btn btn-sm btn-outline-secondary"
-
+              (click)="delete(product.id)"
               >Delete</a
             >
           </div>
@@ -39,3 +41,8 @@
     </tbody>
   </table>
 </div>
+
+<app-paginator
+  [lastPage]="lastPage"
+  (pageChanged)="load($event)"
+></app-paginator>
