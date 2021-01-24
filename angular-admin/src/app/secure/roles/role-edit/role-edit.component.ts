@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormArray } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Permission } from 'src/app/interfaces/permission';
+import { Role } from 'src/app/interfaces/role';
 import { PermissionService } from 'src/app/services/permission.service';
 import { RoleService } from 'src/app/services/role.service';
 
@@ -42,9 +43,16 @@ export class RoleEditComponent implements OnInit {
     });
 
     this.id = this.route.snapshot.params.id;
-    this.roleService.get(this.id).subscribe((role) => {
+    this.roleService.get(this.id).subscribe((role: Role) => {
+      const values = this.permissions.map((p) => {
+        return {
+          value: role.permissions.some((r) => r.id === p.id),
+          id: p.id,
+        };
+      });
       this.form.patchValue({
         name: role.name,
+        permissions: values,
       });
     });
   }
@@ -54,6 +62,17 @@ export class RoleEditComponent implements OnInit {
   }
 
   submit(): void {
-    //
+    const formData = this.form.getRawValue();
+
+    const data = {
+      name: formData.name,
+      permissions: formData.permissions
+        .filter((p) => p.value === true)
+        .map((p) => p.id),
+    };
+
+    this.roleService
+      .update(this.id, data)
+      .subscribe(() => this.router.navigate(['/roles']));
   }
 }

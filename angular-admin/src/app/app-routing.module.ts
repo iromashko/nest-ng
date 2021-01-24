@@ -4,6 +4,7 @@ import { LoginComponent } from './public/login/login.component';
 import { PublicComponent } from './public/public.component';
 import { RegisterComponent } from './public/register/register.component';
 import { DashboardComponent } from './secure/dashboard/dashboard.component';
+import { ProductsComponent } from './secure/products/products.component';
 import { ProfileComponent } from './secure/profile/profile.component';
 import { RoleCreateComponent } from './secure/roles/role-create/role-create.component';
 import { RoleEditComponent } from './secure/roles/role-edit/role-edit.component';
@@ -54,6 +55,10 @@ const routes: Routes = [
       {
         path: 'profile',
         component: ProfileComponent,
+      },
+      {
+        path: 'products',
+        component: ProductsComponent,
       },
     ],
   },
