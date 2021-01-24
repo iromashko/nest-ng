@@ -23,6 +23,12 @@
           <div class="btn-group mr-2">
             <a
               class="btn btn-sm btn-outline-secondary"
+              [routerLink]="['/users', user.id, 'edit']"
+              (click)="edit(user.id)"
+              >Edit</a
+            >
+            <a
+              class="btn btn-sm btn-outline-secondary"
               (click)="delete(user.id)"
               >Delete</a
             >

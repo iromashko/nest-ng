@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Role } from 'src/app/interfaces/role';
 import { RoleService } from 'src/app/services/role.service';
-import { tap } from 'rxjs/operators';
 import { UserService } from 'src/app/services/user.service';
 import { Router } from '@angular/router';
 
