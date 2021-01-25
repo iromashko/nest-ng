@@ -1,4 +1,10 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { Order } from 'src/app/interfaces/order';
 import { OrdersService } from 'src/app/services/orders.service';
@@ -49,5 +55,16 @@ export class OrdersComponent implements OnInit {
 
   itemState(id: number): string {
     return this.selected === id ? 'show' : 'hide';
+  }
+
+  export(): void {
+    this.ordersService.export().subscribe((res) => {
+      const blob = new Blob([res], { type: 'text/csv' });
+      const downloadUrl = window.URL.createObjectURL(res);
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = 'orders.csv';
+      link.click();
+    });
   }
 }
